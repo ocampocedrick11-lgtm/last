@@ -60,6 +60,7 @@ app.get("/api/members/:id", (req, res) => {
 });
 //UPDATE
 app.put("/api/members", (req, res) => {
+  const id = req.body.id;
   const student_id = req.body.student_id;
   const full_name = req.body.full_name;
   const course = req.body.course;
